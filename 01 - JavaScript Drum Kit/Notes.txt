@@ -1,0 +1,5 @@
+Things learnt:
+
+1. <kbd> html tag for keyboard input
+2. data-* attribute to link different tags like here, div and audio.
+3. EventListener-- keydown, transitionend
