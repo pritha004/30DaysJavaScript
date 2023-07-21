@@ -1,0 +1,38 @@
+Things I learnt:
+-----------------
+
+1. background-size css property sets the background image to the size of the div.
+
+2. transform-origin css property changes the point of rotation/transform (by default at center).
+Here we made-- transform-origin: bottom;
+
+3. absolute & relative css property
+To make the child components be in sync with the parent component during resizing, make parent compenent relative and child absolute.
+position: relative;
+To move the child component to desired position we can use these properties:
+top: 26%;
+left: 49.3%;
+
+4. new Date()--- gets the current date and time, has functions like getHours(),getSeconds().
+
+5. Rotation of the hour, min and second hands is calculated as:
+12hour=360deg
+1hour=360/12 deg
+h hour=30h deg
+But hour hand moves with minute increment, so we add the degree change too:
+1hour=30deg
+60min=30deg
+1min=1/2deg
+m min=m/2deg
+
+So, total hour deg change= 30h+ (m/2)deg
+
+Same for seconds and minutes:
+60 minute=360deg
+m minute=6m deg
+Here minute hand too moves with second increment but its negligible so we ignore it.
+
+60 second=360deg
+s second=6s deg
+
+6. setInterval method
