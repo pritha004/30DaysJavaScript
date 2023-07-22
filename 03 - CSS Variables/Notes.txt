@@ -1,0 +1,29 @@
+Things I learnt:
+-----------------
+
+1. Updating CSS variables with JS.
+
+2. Declaring CSS variables:
+--base:#ffc600;
+
+3. Usually we store the variables in root.
+ :root{
+      --base:#ffc600;
+      --spacing:10px;
+      --blur:10px;
+    }
+
+4. We use the variables as:
+img{
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+
+5. EventListener "change" to note any changes made in the input field and update the CSS variable with its value.
+document.documentElement.style.setProperty(`--${e.target.name}`,e.target.value+suffix);
+
+6. || operator
+const suffix=e.target.dataset.sizing || '';
+
+If "e.target.dataset.sizing" has a value then that value is stored else '' is stored in suffix.
