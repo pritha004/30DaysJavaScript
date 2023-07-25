@@ -1,0 +1,10 @@
+Things learnt:
+----------------
+
+Array functions
+1) filter
+2) map
+3) sort
+4) reduce
+
+console.table()
