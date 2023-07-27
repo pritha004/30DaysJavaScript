@@ -1,0 +1,15 @@
+Things I learnt:
+----------------
+
+1. Fetch data from api
+2. async/await
+async func returns a promise
+await is used to stop the execution till the statement is completed, can be used inside an async function only
+3.To copy elements of one array to another, use spread operator:
+cities.push(...data); //cities and data are arrays
+4.regex
+const regex=new RegExp(expression,'gi') // g-global,i-case insensitive
+5. str.match(regex)
+str.replace(regex/string,otherString/expression)
+6. join(''); // joins arrays/strings with given delimiter 
+7.Event listeners- change,keyup
