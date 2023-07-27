@@ -1,0 +1,9 @@
+Things learnt:
+--------------
+
+1. Flex boxes and flex items
+2. :first-child, :last-child, :nth-child(child number)
+3. currentTarget vs target
+4. element.classList.toggle()
+5. Event transitionend and e.propertyName
+6. translateY()
