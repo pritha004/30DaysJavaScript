@@ -1,0 +1,28 @@
+Things learnt:
+--------------
+
+To enable the Shift key behavior, similar to how checkboxes work in most operating systems, where holding Shift and clicking on a checkbox allows to select a range of checkboxes between the current one and the last checked checkbox.
+
+let lastChecked;
+
+  function handleCheck(e)
+  {
+    let inBetween=false;
+    if(e.shiftKey && this.checked) // if shift key is pressed and checkbox is checked
+    {
+      checkboxes.forEach(checkbox=>{ // loops through all the checkboxes to find the starting and ending checkbox
+        if(checkbox===this || checkbox===lastChecked){
+          inBetween=!inBetween;
+        }
+
+        if(inBetween){
+          checkbox.checked=true;
+        }
+      })
+    }
+    lastChecked=this; // stores the checkbox which was checked first
+  }
+
+checkboxes.forEach(checkbox=>{
+    checkbox.addEventListener('click', handleCheck);
+  })
