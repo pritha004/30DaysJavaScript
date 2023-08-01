@@ -1,0 +1,29 @@
+Things learnt:
+--------------
+
+Reference vs copy
+Array and object when assined directly to a variable makes array reference. Same for object.
+
+1.Array copy:
+  const team2=players.slice();
+  const team3=[].concat(players);
+  const team4=[...players];
+  const team5=Array.from(players);
+
+2.Object copy:
+  const captain=Object.assign({},person,{number:99,age:12});
+  const cap2={...person,name:'Alex'};
+
+Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method.
+
+Another method to deep clone:
+const wes={
+      name:'wes',
+      social:{
+        twitter:'@wes',
+        facebook:'wesbos'
+      }
+    }
+    const dev=JSON.parse(JSON.stringify(wes)); //this method is although not recommended
+    dev.social.twitter='@cool';
+    console.log(wes,dev);
