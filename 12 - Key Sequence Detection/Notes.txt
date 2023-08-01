@@ -1,0 +1,6 @@
+Things learnt:
+---------------
+
+To detect key sequence pressed, store the keys in an array.
+1. Event listener keyup
+2. e.key
