@@ -1,0 +1,7 @@
+Things learnt:
+---------------
+
+1)window.scrollY: It represents the number of pixels the page has been scrolled vertically.
+2)window.innerHeight: It gives the height of the browser window.
+3)img.height: It represents the height of the image element.
+4)img.offsetTop: It represents the distance of the top edge of the image from the top of its containing element (the distance between the top of the image and the top of the document).
