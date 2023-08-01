@@ -1,0 +1,20 @@
+Things learnt:
+--------------
+
+1. Properties of a video:
+   video.paused
+   video.play()
+   video.pause()
+   video.currentTime
+   video.duration
+
+2. Event listeners:
+   timeupdate
+   play
+   pause
+
+3.Setting value of an input to a video property:
+  video[this.name]=this.value;
+
+4.Using data-* attribute:
+  video.currentTime+=parseFloat(this.dataset.skip); //data attributes are strings, so convert if needed in calculation
