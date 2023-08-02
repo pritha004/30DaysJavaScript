@@ -1,0 +1,20 @@
+Things learnt:
+---------------
+
+1.Event listener: submit
+  e.preventDefault()- This line prevents the default form submission behavior, which would cause the page to refresh.
+
+2.To query an element based on other attributes:
+  <input type="text" name="item" placeholder="Item Name" required>
+  const text=(this.querySelector('[name=item]')).value;
+
+3.this.reset();
+  The form is reset after submitting, clearing the input field.
+
+4.LocalStorage: It stores data in key-value pair in strings.
+                So we are converting it to string here while storing.
+  localStorage.setItem('items',JSON.stringify(items));
+  const items = JSON.parse(localStorage.getItem('items'));
+
+5.When we are adding an eventListener to a parent element containing many child elements and we want to use a particular child, we can check for the particular input using:
+  if(!e.target.matches('input')) return; //This line checks if the event target (where the click event occurred) is an input element. If not                                            (e.g., if it's the label), the function returns early, and no further action is taken. 
