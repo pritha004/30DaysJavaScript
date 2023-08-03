@@ -1,0 +1,30 @@
+Things learnt:
+--------------
+
+Regular Expression(Regex)
+
+Regular expressions (regex) are used to match patterns in strings. We can use the RegExp object or the regex literal notation (enclosing the pattern between slashes) to define regular expressions. Regular expressions provide a powerful way to search, extract, and manipulate strings based on specific patterns.
+
+1.Creating a regular expression using RegExp object:
+const pattern = 'hello';
+const regex = new RegExp(pattern); // Creates a regex to match the pattern 'hello'
+
+2.Using regex literal notation:
+const regexLiteral = /hello/; // Also matches the pattern 'hello'
+
+3.Matching a pattern in a string:
+const str = 'Hello, World!';
+const pattern = /hello/i; // The 'i' flag makes the match case-insensitive
+const result = str.match(pattern); // Matches 'Hello'
+console.log(result); // Output: ["Hello"]
+
+4.Replacing a pattern in a string:
+const str = 'Hello, World!';
+const pattern = /hello/i;
+const newStr = str.replace(pattern, 'Hi'); // Replaces 'Hello' with 'Hi'
+
+5.Testing if a pattern exists in a string:
+const str = 'Hello, World!';
+const pattern = /hello/i;
+const exists = pattern.test(str); // Returns true
+
