@@ -1,0 +1,8 @@
+Things learnt:
+--------------
+
+1.const {offsetWidth:width, offsetHeight:height}=hero;
+  It first gets the width and height of the hero element using object destructuring and stores them in the width and height variables, respectively.
+
+2.let {offsetX:x,offsetY:y}=e;
+  It gets the mouse's X and Y coordinates relative to the hero element using the offsetX and offsetY properties of the event object e. These coordinates represent the position where the mouse cursor is within the hero element.
