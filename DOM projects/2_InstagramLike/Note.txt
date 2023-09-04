@@ -1,0 +1,26 @@
+1.To make an element center of another parent element using position.
+Parent will be relative, child will be absolute.
+
+#card{
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+
+#card i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0); // to make exactly center
+}
+
+2.Used setTimeout to make the heart disappear after sometime.
+
+card.addEventListener("dblclick",()=>{
+    love.style.transform="translate(-50%,-50%) scale(1)";
+    love.style.opacity=0.8;
+    setTimeout(()=>{
+        love.style.opacity=0;
+        love.style.transform="translate(-50%,-50%) scale(0)";
+    },1000)
+})
