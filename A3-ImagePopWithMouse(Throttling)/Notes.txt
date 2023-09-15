@@ -1,0 +1,8 @@
+Things learnt:
+--------------
+
+1) mousemove event listener--position of cursor is given by clientX and clientY properties.
+
+2) getBoundingClientRect()--gives the distance of the div from top, left.
+
+3)Used gsap for animation
