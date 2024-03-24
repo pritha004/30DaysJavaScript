@@ -1,0 +1,31 @@
+let tl=gsap.timeline({
+    default:{
+        duration:1,
+    }
+})
+
+tl.to("h1",{
+    y:-100,
+    color:"white"
+}).to(".box1",{
+    x:-100,
+    backgroundColor:"pink"
+}).to(".box2",{
+    y:100,
+    backgroundColor:"purple"
+}).to(".box3",{
+    x:100,
+    backgroundColor:"crimson"
+}).to("h1",{
+    y:0,
+    color:"black"
+}).to(".box1",{
+    x:0,
+    backgroundColor:"yellow"
+}).to(".box2",{
+    y:0,
+    backgroundColor:"yellow"
+}).to(".box3",{
+    x:0,
+    backgroundColor:"yellow"
+})
